@@ -37,7 +37,7 @@ docker buildx build --platform linux/amd64 -t k8s-deployment-restarter:latest .
 ## Test
 ```bash
 curl -X 'POST' \
-  'http://0.0.0.0:8080/restart-deployment/?api_key_header=secret' \
+  'http://0.0.0.0:8080/restart-deployment/?api_key=secret' \
   -H 'accept: application/json' \
   -H 'Content-Type: application/json' \
   -d '{
