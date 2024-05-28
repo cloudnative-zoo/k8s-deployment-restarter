@@ -26,15 +26,6 @@ python main.py
 
 ## Run in Kubernetes
 
-**make sure you have built and pushed docker image to docker registery to build**
-
-```bash
-docker buildx build --platform linux/amd64 -t k8s-deployment-restarter:latest .
-```
-
-#### push image to docker registry e.g hassnat/k8s-deployment-restarter:latest
-
-#### add image and tag to manifests/app.yaml
 
 ### Apply manifests
 
