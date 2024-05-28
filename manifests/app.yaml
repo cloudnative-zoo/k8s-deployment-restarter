@@ -25,7 +25,7 @@ spec:
       serviceAccountName: k8s-deployment-restarter-account
       containers:
         - name: k8s-deployment-restarter
-          image: <your-image>
+          image: ghcr.io/cloudnative-zoo/k8s-deployment-restarter:master
           ports:
             - containerPort: 8000
           env:
